@@ -9,6 +9,7 @@ const StyledNavBar = puffin.style.div`
         padding:15px;
         text-decoration:none; 
         white-space:nowrap;
+        cursor:pointer;
     }
     a:hover{
         color:{{hoveringText}};
