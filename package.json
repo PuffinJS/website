@@ -4,7 +4,7 @@
   "description": "Puffin's website",
   "scripts": {
     "dev": "parcel index.html",
-    "build":"parcel build index.html"
+    "build":"parcel build index.html && cp _redirects dist"
   },
   "author": "Marc Espín Sanz <mespinsanz@gmail.com>",
   "license": "MIT",
