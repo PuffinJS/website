@@ -1,0 +1,15 @@
+{
+  "name": "puffin-website",
+  "version": "0.0.1",
+  "description": "Puffin's website",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "author": "Marc Espín Sanz <mespinsanz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@mkenzo_8/puffin": "^0.2.2",
+    "parcel": "^1.12.4",
+    "router.js": "^1.0.3"
+  }
+}
