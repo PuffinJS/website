@@ -9,7 +9,7 @@
   "author": "Marc Espín Sanz <mespinsanz@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@mkenzo_8/puffin": "^0.2.4",
+    "@mkenzo_8/puffin": "^0.2.6",
     "parcel": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.2.1",
     "router.js": "^1.0.3"
