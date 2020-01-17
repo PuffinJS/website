@@ -3,6 +3,7 @@ import { puffin } from '@mkenzo_8/puffin'
 import Home from './routes/home'
 import Contact from './routes/contact'
 import Documentation from './routes/docs'
+import Demo from './routes/demo'
 
 import Lost from './components/lost'
 
@@ -23,6 +24,10 @@ const router = puffin.router([
         path:'/docs',
         component:Documentation,
         title:'Docs | PuffinJS'
+    },{
+        path:'/demo',
+        component:Demo,
+        title:'Demo | PuffinJS'
     }
 ],{
     lost:{

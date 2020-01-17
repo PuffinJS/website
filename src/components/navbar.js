@@ -10,6 +10,7 @@ const StyledNavBar = puffin.style.div`
         text-decoration:none; 
         white-space:nowrap;
         cursor:pointer;
+        user-select: none;
     }
     a:hover{
         color:{{hoveringText}};
@@ -31,6 +32,7 @@ const Navbar = puffin.element(`
             <routerLink  path="/home" class="active">🏠 Home</routerLink>
             <routerLink  path="/contact">📞 Contact</routerLink>
             <routerLink  path="/docs">📚 Documentation</routerLink>
+            <routerLink  path="/demo">🤩 Demo</routerLink>
         </StyledNavBar>
     </div>
 `,{
