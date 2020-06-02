@@ -1,12 +1,13 @@
-import { puffin } from '@mkenzo_8/puffin'
+import { element, style } from '@mkenzo_8/puffin'
 
-
-const centeredAlign = puffin.style.div`
-    &{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
+const centeredAlignStyle = style`
+	&{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
 `
+
+const centeredAlign = () => element`<div class="${centeredAlignStyle}"/>`
 
 export default centeredAlign

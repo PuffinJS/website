@@ -1,3 +1,3 @@
-## PuffinJS's website
+### PuffinJS's website
 
-This is the source code of [PuffinJS](https://github.com/PuffinJS/puffin).
+Website for [PuffinJS](https://github.com/PuffinJS/puffin)

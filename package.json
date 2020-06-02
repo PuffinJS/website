@@ -1,20 +1,22 @@
 {
-  "name": "puffin-website",
-  "version": "0.1.0",
-  "description": "Puffin's website",
-  "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "author": "Marc Espín Sanz <mespinsanz@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@mkenzo_8/puffin": "^0.2.6",
-    "parcel": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.2.1"
-  },
-  "staticFiles": {
-    "staticPath": "static",
-    "watcherGlob": "**"
-  } 
+	"name": "puffin-website",
+	"version": "1.0.0",
+	"description": "Puffin's website",
+	"scripts": {
+		"dev": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"author": "Marc Espín Sanz <mespinsanz@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@mkenzo_8/puffin": "^0.9.1"
+	},
+	"devDependencies": {
+		"parcel": "^1.12.4",
+		"parcel-plugin-static-files-copy": "^2.2.1"
+	},
+	"staticFiles": {
+		"staticPath": "static",
+		"watcherGlob": "**"
+	}
 }

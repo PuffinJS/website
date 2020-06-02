@@ -1,45 +1,41 @@
-import { puffin } from '@mkenzo_8/puffin'
+import { element, style, routerLink } from '@mkenzo_8/puffin'
 
-import router from '../router.js'
-import state from '../state.js'
 
-const StyledNavBar = puffin.style.div`
-    ${state}
-    a{
-        padding:15px;
-        text-decoration:none; 
-        white-space:nowrap;
-        cursor:pointer;
-        user-select: none;
-    }
-    a:hover{
-        color:{{hoveringText}};
-    }
-    a.active{
-        color:{{hoveringText}}
-    }
-    &{
-        padding:25px;
-        margin:0px;
-        overflow:auto;
-        display:flex;
-    }
+const StyledNavBar = style`
+	& {
+		padding:25px;
+		margin:0px;
+		overflow:auto;
+		display:flex;
+	}
+	& a {
+		padding:15px;
+		text-decoration:none; 
+		white-space:nowrap;
+		cursor:pointer;
+		user-select: none;
+	}
+	& a:hover{
+		color:gray;
+	}
+	& a.active{
+		color:gray
+	}
 `
 
-const Navbar = puffin.element(`
-    <div>
-        <StyledNavBar>
-            <routerLink  path="/home" class="active">🏠 Home</routerLink>
-            <routerLink  path="/contact">📞 Contact</routerLink>
-            <routerLink  path="/docs">📚 Documentation</routerLink>
-            <routerLink  path="/demo">🤩 Demo</routerLink>
-        </StyledNavBar>
-    </div>
-`,{
-    components: {
-        routerLink:router.link,
-        StyledNavBar
-    }
-})
+const Navbar = () => {
+	return element({
+		components: {
+			routerLink
+		}
+	})`
+	<div class="${StyledNavBar}">
+		<routerLink  to="/home" class="active">🏠 Home</routerLink>
+		<routerLink  to="/contact">📞 Contact</routerLink>
+		<routerLink  to="/docs">📚 Documentation</routerLink>
+		<routerLink  to="/demo">🤩 Demo</routerLink>
+	</div>
+`
+}
 
 export default Navbar

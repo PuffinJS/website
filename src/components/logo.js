@@ -1,20 +1,22 @@
-import { puffin } from '@mkenzo_8/puffin'
+import { element, style } from '@mkenzo_8/puffin'
 import LogoImage  from '../../assets/logo.svg'
 
-const LogoWrapper = puffin.style.div`
-    &{
-        padding:10px;
-    }
+const LogoWrapper = style`
+	&{
+		padding:10px;
+	}
 `
 
-const Logo = puffin.element(`
-    <LogoWrapper>
-        <img src="${LogoImage}"/>
-    </LogoWrapper>
-`,{
-    components:{
-        LogoWrapper
-    }
-})
+const Logo = () => {
+	return element({
+		components:{
+			LogoWrapper
+		}
+	})`
+	<div class="${LogoWrapper}">
+		<img src="${LogoImage}"/>
+	</div>
+	`
+}
 
 export default Logo
