@@ -9,7 +9,8 @@
 	"author": "Marc Espín Sanz <mespinsanz@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@mkenzo_8/puffin": "^0.9.1"
+		"@mkenzo_8/puffin": "^0.9.1",
+		"dot-prop": "^5.2.0"
 	},
 	"devDependencies": {
 		"parcel": "^1.12.4",
